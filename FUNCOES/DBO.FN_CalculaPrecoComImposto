@@ -1,0 +1,11 @@
+CREATE FUNCTION DBO.FN_CalculaPrecoComImposto(
+@preco DECIMAL(15,2),
+@aliquota DECIMAL(15,2)
+) 
+RETURNS DECIMAL(15,2)
+AS
+BEGIN
+
+RETURN @PRECO  + (@PRECO * @ALIQUOTA / 100);
+
+END
