@@ -18,3 +18,18 @@ BEGIN
 END
  RETURN @RESULTADO
 end 
+
+
+
+
+
+--SELECT 
+--	nome AS [Nome do produto],
+--	preco as [preço de venda],
+--	custo,
+--	preco - custo as [lucro bruto],
+--    dbo.FN_CalculoLucro(preco, custo, 'B') AS [Lucro Bruto (Função)],
+--    CONVERT(DECIMAL(15,2), ((preco - custo) / preco) * 100) AS [Margem de Lucro (%) Calculada],
+--    dbo.FN_CalculoLucro(preco, custo, 'M') AS [Margem de Lucro (%) (Função)]
+--	 FROM Produtos
+
